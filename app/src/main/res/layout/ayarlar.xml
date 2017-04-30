@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextCihazAd"
+        android:hint="Cihaz Adi" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextip"
+        android:layout_below="@+id/editTextVeriAdres"
+        android:layout_alignParentStart="true"
+        android:hint="Cİhaz ipsi" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextVeriAdres"
+        android:layout_below="@+id/editTextCihazAd"
+        android:layout_alignParentStart="true"
+        android:hint="Veri Adresi" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kaydet"
+        android:id="@+id/buttonKaydet"
+        android:layout_gravity="right"
+        android:layout_marginTop="68dp"
+        android:layout_below="@+id/editTextip"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="80dp" />
+
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:name="com.rankend.barankaraboa.iotcontrolsystem.footerbar"
+        android:id="@+id/fragment2"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kayıtlı Cihazlar"
+        android:id="@+id/buttonCihazliste"
+        android:layout_alignTop="@+id/buttonKaydet"
+        android:layout_toEndOf="@+id/buttonKaydet" />
+</RelativeLayout>
